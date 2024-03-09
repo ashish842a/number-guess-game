@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Khelo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main">
+        <div class="name-container">
+            <h1></h1>
+        </div>
+        <div class="input">
+            <label for="number">Enter Guessing Number :</label>
+            <input type="text" id="number" name="number" autocomplete="off">
+        </div>
+        <div class="chances">
+            <p></p>
+        </div>
+        <button class="btn-start" onclick="start()">Play</button>
+        <div class="ring">Loading
+            <span></span>
+        </div>
+        <div class="random">
+            <h1></h1>
+            <button class="reset">Next Turn</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+    <script>
+    document.body.addEventListener("keydown",function(dets){
+     if(dets.key=='Enter'){
+      document.querySelector(".btn-start").click();
+     }
+  })
+    </script>
+</body>
+
+</html>
